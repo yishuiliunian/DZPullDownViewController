@@ -16,6 +16,10 @@
 		87D3148917D60D13005D6564 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D3148817D60D13005D6564 /* Default.png */; };
 		87D3148B17D60D13005D6564 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D3148A17D60D13005D6564 /* Default@2x.png */; };
 		87D3148D17D60D13005D6564 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D3148C17D60D13005D6564 /* Default-568h@2x.png */; };
+		87D3149517D60D27005D6564 /* DZPullDownViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87D3149417D60D27005D6564 /* DZPullDownViewController.mm */; };
+		87D3149D17D60D4C005D6564 /* DZBottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D3149B17D60D4C005D6564 /* DZBottomViewController.m */; };
+		87D3149E17D60D4C005D6564 /* DZBottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D3149C17D60D4C005D6564 /* DZBottomViewController.xib */; };
+		87D314A117D60D86005D6564 /* DZTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D314A017D60D86005D6564 /* DZTopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,13 @@
 		87D3148817D60D13005D6564 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		87D3148A17D60D13005D6564 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		87D3148C17D60D13005D6564 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		87D3149317D60D27005D6564 /* DZPullDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPullDownViewController.h; sourceTree = "<group>"; };
+		87D3149417D60D27005D6564 /* DZPullDownViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DZPullDownViewController.mm; sourceTree = "<group>"; };
+		87D3149A17D60D4C005D6564 /* DZBottomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZBottomViewController.h; sourceTree = "<group>"; };
+		87D3149B17D60D4C005D6564 /* DZBottomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZBottomViewController.m; sourceTree = "<group>"; };
+		87D3149C17D60D4C005D6564 /* DZBottomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZBottomViewController.xib; sourceTree = "<group>"; };
+		87D3149F17D60D86005D6564 /* DZTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTopViewController.h; sourceTree = "<group>"; };
+		87D314A017D60D86005D6564 /* DZTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +89,14 @@
 		87D3147C17D60D13005D6564 /* DZPullDownViewController */ = {
 			isa = PBXGroup;
 			children = (
+				87D3149617D60D2F005D6564 /* src */,
 				87D3148517D60D13005D6564 /* DZAppDelegate.h */,
 				87D3148617D60D13005D6564 /* DZAppDelegate.m */,
+				87D3149F17D60D86005D6564 /* DZTopViewController.h */,
+				87D314A017D60D86005D6564 /* DZTopViewController.m */,
+				87D3149A17D60D4C005D6564 /* DZBottomViewController.h */,
+				87D3149B17D60D4C005D6564 /* DZBottomViewController.m */,
+				87D3149C17D60D4C005D6564 /* DZBottomViewController.xib */,
 				87D3147D17D60D13005D6564 /* Supporting Files */,
 			);
 			path = DZPullDownViewController;
@@ -97,6 +114,15 @@
 				87D3148C17D60D13005D6564 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87D3149617D60D2F005D6564 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				87D3149317D60D27005D6564 /* DZPullDownViewController.h */,
+				87D3149417D60D27005D6564 /* DZPullDownViewController.mm */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +181,7 @@
 				87D3148917D60D13005D6564 /* Default.png in Resources */,
 				87D3148B17D60D13005D6564 /* Default@2x.png in Resources */,
 				87D3148D17D60D13005D6564 /* Default-568h@2x.png in Resources */,
+				87D3149E17D60D4C005D6564 /* DZBottomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +194,9 @@
 			files = (
 				87D3148317D60D13005D6564 /* main.m in Sources */,
 				87D3148717D60D13005D6564 /* DZAppDelegate.m in Sources */,
+				87D3149517D60D27005D6564 /* DZPullDownViewController.mm in Sources */,
+				87D3149D17D60D4C005D6564 /* DZBottomViewController.m in Sources */,
+				87D314A117D60D86005D6564 /* DZTopViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +311,7 @@
 				87D3149217D60D13005D6564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

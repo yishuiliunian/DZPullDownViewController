@@ -7,14 +7,24 @@
 //
 
 #import "DZAppDelegate.h"
-
+#import "DZBottomViewController.h"
+#import "DZTopViewController.h"
+#import "DZPullDownViewController.h"
 @implementation DZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
+    DZTopViewController* t =[[DZTopViewController alloc]init];
+    DZBottomViewController* b = [DZBottomViewController new];
+    
+    DZPullDownViewController* dzpd = [[DZPullDownViewController alloc]initWithBottom:b top:[[UINavigationController alloc] initWithRootViewController:t]];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = dzpd;
     [self.window makeKeyAndVisible];
     return YES;
 }
